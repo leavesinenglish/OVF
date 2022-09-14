@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 template<class T>
 T get_epsilon() {
@@ -57,14 +58,16 @@ void comparison() {
 }
 
 int main() {
-    std::cout << "epsilon for float: "<< get_epsilon<float>() << std::endl;
-    std::cout << "epsilon for double: "<< get_epsilon<double>() << std::endl;
+    std::cout << "epsilon for float: " << get_epsilon<float>() << std::endl;
+    std::cout << "epsilon for double: " << get_epsilon<double>() << std::endl;
 
     std::cout << "number of digits in mantissa for float: " << get_num_of_digits<float>() << std::endl;
     std::cout << "number of digits in mantissa for double: " << get_num_of_digits<double>() << std::endl;
 
-    std::cout << "max and min power for float: " << get_max_power<float>() << "; " << get_min_power<float>() << std::endl;
-    std::cout << "max and min power for double: " << get_max_power<double>() << "; " << get_min_power<double>() << std::endl;
+    std::cout << "max and min power for float: " << get_max_power<float>() << "; " << get_min_power<float>()
+              << std::endl;
+    std::cout << "max and min power for double: " << get_max_power<double>() << "; " << get_min_power<double>()
+              << std::endl;
 
     std::cout << "float: " << std::endl;
     comparison<float>();
