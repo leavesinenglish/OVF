@@ -13,15 +13,15 @@ N_x = 100
 N_y = 100
 a = -L
 b = L
-u_x = [Solver(a, b, N_x, dt / 2) for _ in range(N_y)]
-u_y = [Solver(a, b, N_y, dt) for _ in range(N_x)]
+u_x = [Solver(a, b, N_x, dt) for _ in range(N_y)]
+u_y = [Solver(a, b, N_y, dt/2) for _ in range(N_x)]
 X, Y = np.meshgrid(u_x[0].x, u_y[0].x)
 layer = []
 solution = np.ones(shape=X.shape)
 t = np.arange(0, T, dt)
 current_iteration = 0
 for it in t:
-    print(f'{current_iteration} / {t.size} steps')
+    print(f'{current_iteration} / {t.size}')
     layer.append(np.copy(solution))
     intensity = np.vectorize(f, otypes=[float])(X, Y, it)
     for j, s in enumerate(u_x):

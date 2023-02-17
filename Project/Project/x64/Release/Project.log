@@ -1,0 +1,14 @@
+﻿  main.cpp
+C:\Users\HUAWEI\OVF\Project\sciplot\PlotBase.hpp(389,41): warning C4244: аргумент: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\HUAWEI\OVF\Project\sciplot\PlotBase.hpp(429,41): warning C4244: аргумент: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\HUAWEI\OVF\Project\sciplot\Plot.hpp(548,62): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\HUAWEI\OVF\Project\sciplot\Plot3D.hpp(234,62): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\HUAWEI\OVF\Project\sciplot\Figure.hpp(215,41): warning C4244: аргумент: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\HUAWEI\OVF\Project\sciplot\Figure.hpp(271,41): warning C4244: аргумент: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\HUAWEI\OVF\Project\Project\main.cpp(217,3): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  Создание кода
+  2 of 741 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  Project.vcxproj -> C:\Users\HUAWEI\OVF\Project\x64\Release\Project.exe
